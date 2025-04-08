@@ -1,1 +1,54 @@
-<h1> hola </h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <script src="main.js" defer></script>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  nav{
+    height: 9vh;
+    width: 100vw;
+    background-color: black;
+  }
+  .contenido{
+    height: 91vh;
+    width: 100vw;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  .contenido section{
+    height: 91vh;
+    width: 100vw;
+    scroll-snap-align: start;
+  }
+  .seccion1{
+    background-color: antiquewhite;
+  }
+  .seccion2{
+    background-color: rgb(220, 198, 170);
+  }
+  .seccion3{
+    background-color: rgb(208, 183, 149);
+  }
+  .seccion4{
+    background-color: rgb(187, 154, 111);
+  }
+</style>
+<body>
+  <nav></nav>
+  <div class="contenido">
+    <section class="seccion1"></section>
+    <section class="seccion2"></section>
+    <section class="seccion3"></section>
+    <section class="seccion4"></section>
+  </div>
+</body>
+</html>
